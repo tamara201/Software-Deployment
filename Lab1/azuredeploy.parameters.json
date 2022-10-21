@@ -16,6 +16,9 @@
         },
         "webAppName": {
             "value": "webapp"
-        }
+        },
+      "linuxFxVersion": {
+        "value": "NODE|12-lts"
+      }
     }
 }

@@ -38,7 +38,7 @@
     },
     "linuxFxVersion": {
       "type": "string",
-      "defaultValue": "php|7.0",
+      "defaultValue": "NODE|12-lts",
       "metadata": {
         "description": "The Runtime stack of current web app"
       }
@@ -94,7 +94,8 @@
       "properties": {
         "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('appServicePlanName'))]",
         "siteConfig": {
-          "linuxFxVersion": "[parameters('linuxFxVersion')]"
+          "linuxFxVersion": "[parameters('linuxFxVersion')]",
+          "nodeVersion": "16.17.1"
         }
       }
     }
