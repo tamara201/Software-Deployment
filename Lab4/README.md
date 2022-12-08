@@ -69,6 +69,6 @@ To verify if the cluster stopped or is running use the command below.
 
     az aks show --resource-group Lab4 --name myAKSCluster
 
-To **delete** the AKS you have to remove the resource group with the following command:
+To **delete** the AKS use the following command:
 
-    az group delete --name Lab4 --yes --no-wait
+    az aks delete --name myAKSCluster --resource-group Lab4
